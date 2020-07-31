@@ -1,0 +1,362 @@
+
+/* START GLOBAL */
+
+*{
+    list-style-type: none;
+}
+
+/* END GLOBAL */
+
+/* START NAVBAR */
+
+.navbar-container{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    background-color: black;
+    padding-left: 1rem;
+}
+.list{
+    display: flex;
+    padding-top: 1rem;
+}
+#bars{
+    padding-top: 1rem;
+    display: none;
+}
+.list li{
+    padding-right: 1rem;
+}
+.list li a{
+    color: white;
+    text-decoration: none;
+    padding: .5rem 1rem;
+}
+.list li a:hover{
+    background-color: #333;
+}
+
+/* END NAVBAR */
+
+/* START LANDING PAGE */
+
+.landing-container{
+    padding-bottom: 2rem;
+}
+.landing-header{
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.landing-text{
+    width: 90%;
+    margin: auto;
+}
+.hr1{
+    width: 90%;
+    height: 2px;
+    background-color: gainsboro;
+    margin: auto;
+}
+
+/* END LANDING PAGE */
+
+/* START INFORMATION */
+
+.info-1-container{
+    padding-top: 3rem;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+.info-2-container{
+    padding-top: 3rem;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+.info-2-img{
+    margin-right: 1rem;
+}
+.info-1-img{
+    margin-left: 1rem;
+}
+
+/* END INFORMATION */
+
+/* START COUNTER */
+
+.counter-container{
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    background-color: black;
+    color: white;
+}
+#served, #cons, #yrsofxp, #awrds{
+    color: gray;
+    font-size: 32px;
+}
+
+/* END COUNTER */
+
+/* START WHY CHOOSE US */
+
+.choose-container{
+    text-align: center;
+}
+.why{
+    display: flex;
+    flex: 33.3%;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+.s-1, .s-2, .s-3, .s-4{
+    box-sizing: border-box;
+    border: 2px solid rgba(0, 0, 0, .3);
+    border-radius: 5px;
+    padding: .5rem 1rem;
+    width: min(250px, 90%);
+    margin: auto;
+}
+.img{
+    max-width: 75px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    filter: brightness(0.5);
+}
+
+/* END WHY CHOOSE US */
+
+/* START TESTIMONIALS */
+
+.testimonials-container{
+    text-align: center;
+}
+.testimonials{
+    display: flex;
+    justify-content: space-evenly;
+    width: 90%;
+    margin: auto;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+}
+.person{
+    width: min(250px, 80%);
+    border: 2px solid rgba(0, 0, 0, .3);
+    padding: .5rem 1rem;
+    border-radius: 5px;
+}
+#user{
+    width: min(80px, 75%);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.job-title{
+    font-size: 12px;
+    color: gray;
+    margin-top: -0.75rem;
+}
+
+/* END TESTIMONIALS */
+
+/* START CONTACT */
+
+.contact-container{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: white;
+    background-color: black;
+}
+#btn{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border: 0;
+    border-radius: 10px;
+}
+
+/* END CONTACT */
+
+/* START FOOTER */
+
+.footer{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+    text-align: center;
+    background-color: #222;
+    color: white;
+}
+.quick{
+    padding-left: 2rem;
+}
+#text{
+    width: min(20rem, 90%);
+    background: rgba(0, 0, 0, .3);
+    border: 0;
+    border-radius: 5px;
+    margin-top: .5rem;
+    color: white;
+    font-size: 16px;
+    padding-left: .5rem;
+}
+#sub{
+    width: min(20rem, 90%);
+    margin-top: .5rem;
+    border: 0;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    padding-top: .25rem;
+    padding-bottom: .25rem;
+}
+.sm-list{
+    display: flex;
+    justify-content: space-around;
+    margin-left: -2.5rem;
+}
+.sm-list li{
+    padding-left: 1.5rem;
+}
+
+/* END FOOTER */
+
+/* START RIGHTS */
+
+.rights-container{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+/* END RIGHTS */
+
+@media screen and (max-width: 1025px){
+    .why{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 1rem;
+    }
+}
+
+@media screen and (max-width: 850px){
+    .list{
+        flex-direction: column;
+        text-align: center;
+        margin-left: -7.5rem;
+        margin-top: 0rem;
+        height:0rem;
+        overflow: hidden;
+        filter: opacity(0);
+        transition: 350ms ease-in-out;
+    }
+    .list li{
+        margin-bottom: 1rem;
+    }
+    .show{
+        height: 10rem;
+        filter: opacity(1);
+        margin-top: 3rem;
+        transition: 350ms ease-in-out;
+    }
+    #bars{
+        display: block;
+        padding-right: 1.5rem;
+        padding-top: 1.25rem;
+    }
+    .testimonials{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .person{
+        margin-bottom: 1rem;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .footer{
+        flex-direction: column;
+    }
+    .info-1-container, .info-2-container{
+        flex-direction: column;
+    }
+    .info-2-img{
+        margin-right: 0rem;
+        margin-bottom: 2rem;
+    }
+    .info-1-img{
+        margin-left: 0rem;
+        margin-bottom: 2rem;
+    }
+    .sm-list{
+        justify-content: center;
+    }
+
+}
+
+@media screen and (max-width: 550px){
+    .counter-container{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    .contact-container{
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+    }
+    #btn{
+        width: 10rem;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .why{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .follow{
+        margin-top: 2rem;
+    }
+}
+
+@media screen and (max-width: 360px){
+    .list{
+        margin-left: -12rem;
+    }
+    .counter-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .follow{
+        margin-top: 2rem;
+    }
+    .follow .sm-list{
+        margin-left: -3.5rem;
+    }
+    .qls{
+        text-align: center;
+        margin-left: -2rem;
+    }
+    .quick{
+        margin-left: -2rem;
+    }
+    #placeholder{
+        height: 10rem;
+    }
+}
